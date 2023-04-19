@@ -73,13 +73,31 @@ public class GUI extends JFrame {
 	public void createDefaultWindow() {
 
 		setSize(400, 300);
+		
+		setResizable(false);
 
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 
 		setLocationRelativeTo(null);
 
-		setVisible(true);
+		setVisible(false);
 
+	}
+	
+	public void displayFrame(boolean var) {
+		
+		if (var == true) {
+			
+			this.setVisible(true);
+			
+		}
+		
+		else {
+			
+			this.setVisible(false);
+			
+		}
+		
 	}
 
 }

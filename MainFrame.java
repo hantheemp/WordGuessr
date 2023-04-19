@@ -4,7 +4,9 @@ public class MainFrame {
 	
 	public static void main(String[] args) {
 		
-		GUI frame = new GUI();
+		// GUI frame = new GUI();
+		
+		MainMenu menu = new MainMenu();
 		
 	}
 
