@@ -3,12 +3,15 @@ public class TreeNode {
     private String treeAnswer;
     private TreeNode LeftChild;
     private TreeNode RightChild;
+
+    private int number;
     private int height;
 
-    public  TreeNode(String word, String treeAnswer) {
+    public  TreeNode(String word, String treeAnswer, int height, int number) {
         this.word = word;
         this.treeAnswer = treeAnswer;
-        this.height = 1;
+        this.height = height;
+        this.number = number;
     }
 
     public String getWord() {
@@ -41,6 +44,14 @@ public class TreeNode {
 
     public void setRightChild(TreeNode rightChild) {
         RightChild = rightChild;
+    }
+
+    public int getNumber() {
+        return number;
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
     }
 
     public int getHeight() {
