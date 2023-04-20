@@ -1,42 +1,47 @@
+package week01;
+
 public class WordQueue {
-    private NodeLL rear;
-    private NodeLL front;
 
-    public WordQueue() {this.front = this.rear = null;}
+	private NodeLL rear;
+	private NodeLL front;
 
-    public WordQueue(LinkedList a) {
-        this.front = a.getFirst();
-        this.rear = a.getLast();
-    }
+	public WordQueue() {
+		this.front = this.rear = null;
+	}
 
-    public void addToQueue(NodeLL node) {
-        getRear().next = node;
-        node.prev = getRear();
-        setRear(node);
-    }
+	public WordQueue(LinkedList a) {
+		this.front = a.getFirst();
+		this.rear = a.getLast();
+	}
 
-    public void removeFromQueue() {
-        if(getFront() != null) {
-            setFront(getFront().next);
-            getFront().prev = null;
-        }
-    }
+	public void addToQueue(NodeLL node) {
+		getRear().setNext(node);
+		node.setPrev(getRear());
+		setRear(node);
+	}
 
-    //Encapsulation
-    public NodeLL getFront() {
-        return front;
-    }
+	public void removeFromQueue() {
+		if (getFront() != null) {
+			setFront(getFront().getNext());
+			getFront().setPrev(null);
+		}
+	}
 
-    public NodeLL getRear() {
-        return rear;
-    }
+	// Encapsulation
+	public NodeLL getFront() {
+		return front;
+	}
 
-    public void setFront(NodeLL front) {
-        this.front = front;
-    }
+	public NodeLL getRear() {
+		return rear;
+	}
 
-    public void setRear(NodeLL rear) {
-        this.rear = rear;
-    }
+	public void setFront(NodeLL front) {
+		this.front = front;
+	}
+
+	public void setRear(NodeLL rear) {
+		this.rear = rear;
+	}
 
 }
