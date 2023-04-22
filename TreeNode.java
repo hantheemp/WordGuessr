@@ -7,10 +7,10 @@ public class TreeNode {
     private int number;
     private int height;
 
-    public  TreeNode(String word, String treeAnswer, int height, int number) {
+    public  TreeNode(String word, String treeAnswer, int number) {
         this.word = word;
         this.treeAnswer = treeAnswer;
-        this.height = height;
+        this.height = 1;
         this.number = number;
     }
 
