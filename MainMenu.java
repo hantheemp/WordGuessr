@@ -14,8 +14,10 @@ import javax.imageio.ImageIO;
 import javax.swing.*;
 
 public class MainMenu extends JFrame {
-	
-	private GUI gameGUI;
+
+	public static ClassicModeGUI gameGUI = new ClassicModeGUI();
+
+	private GameModeFrame gmf;
 
 	private JFrame infoFrame;
 
@@ -34,46 +36,48 @@ public class MainMenu extends JFrame {
 	private ImageIcon exitButtonIcon;
 
 	public MainMenu() {
-		
-		this.gameGUI = new GUI();
+
+		this.gmf = new GameModeFrame();
 
 		this.infoFrame = new JFrame();
 
 		createDefaultWindow();
 
 		this.playButton = new JButton("Play");
-		
+
 		this.playButton.addMouseListener(new MouseListener() {
-			
+
 			@Override
 			public void mouseReleased(MouseEvent e) {
 				// TODO Auto-generated method stub
-				
+
 			}
-			
+
 			@Override
 			public void mousePressed(MouseEvent e) {
 				// TODO Auto-generated method stub
-				
+
 			}
-			
+
 			@Override
 			public void mouseExited(MouseEvent e) {
 				// TODO Auto-generated method stub
-				
+
 			}
-			
+
 			@Override
 			public void mouseEntered(MouseEvent e) {
 				// TODO Auto-generated method stub
-				
+
 			}
-			
+
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				
-				gameGUI.displayFrame(true);
-				
+
+				exit();
+
+				gmf.setVisible(true);
+
 			}
 		});
 
@@ -97,7 +101,7 @@ public class MainMenu extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 
 				exit(infoFrame);
-				
+
 				exit(gameGUI);
 
 				exit();
@@ -154,7 +158,7 @@ public class MainMenu extends JFrame {
 		infoFrame.setLayout(new BorderLayout());
 
 		infoFrame.add(infoLabel);
-		
+
 		infoFrame.setResizable(false);
 
 		infoFrame.setLocationRelativeTo(null);

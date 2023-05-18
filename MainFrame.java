@@ -6,7 +6,7 @@ public class MainFrame {
 
 		// GUI frame = new GUI();
 
-		MainMenu menu = new MainMenu();
+		MainMenu mm = new MainMenu();
 
 	}
 
