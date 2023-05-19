@@ -9,8 +9,6 @@ import java.awt.event.MouseListener;
 
 public class GameOverScreen extends JFrame implements MouseListener {
 
-	private MainMenu mm = new MainMenu();
-
 	private JButton exitButton;
 
 	private JButton mainMenuButton;
@@ -50,8 +48,7 @@ public class GameOverScreen extends JFrame implements MouseListener {
 		mainMenuButton.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				// Handle main menu button click event
-				// Add your code here
+
 			}
 		});
 		buttonPanel.add(mainMenuButton);
@@ -89,31 +86,68 @@ public class GameOverScreen extends JFrame implements MouseListener {
 
 	@Override
 	public void mouseClicked(MouseEvent e) {
-		// TODO Auto-generated method stub
-		
+
+		if (e.getSource() == this.exitButton) {
+
+			System.exit(EXIT);
+
+		}
+
+		else if (e.getSource() == this.mainMenuButton) {
+
+			setVisible(false);
+
+			new MainMenu();
+
+			MainMenu.gameGUI.setUserLives(3);
+
+			MainMenu.gameGUI.setUserScore(0);
+
+			MainMenu.gameGUI.resetLives();
+
+			MainMenu.gameGUI.resetScore();
+
+		}
+
+		else {
+
+			setVisible(false);
+
+			MainMenu.gameGUI.setVisible(true);
+
+			MainMenu.gameGUI.setUserLives(3);
+
+			MainMenu.gameGUI.setUserScore(0);
+
+			MainMenu.gameGUI.resetLives();
+
+			MainMenu.gameGUI.resetScore();
+
+		}
+
 	}
 
 	@Override
 	public void mousePressed(MouseEvent e) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void mouseReleased(MouseEvent e) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void mouseEntered(MouseEvent e) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void mouseExited(MouseEvent e) {
 		// TODO Auto-generated method stub
-		
+
 	}
 }

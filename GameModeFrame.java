@@ -12,11 +12,9 @@ public class GameModeFrame extends JFrame implements MouseListener {
 
 	private JButton memorizeMode;
 
-	private JButton duelMode;
-
 	public GameModeFrame() {
 
-		setLayout(new GridLayout(3, 1));
+		setLayout(new GridLayout(2, 1));
 
 		this.classicMode = new JButton("Classic");
 
@@ -24,13 +22,9 @@ public class GameModeFrame extends JFrame implements MouseListener {
 
 		this.memorizeMode = new JButton("Memorize!");
 
-		this.duelMode = new JButton("Duel!");
-
 		add(this.classicMode);
 
 		add(this.memorizeMode);
-
-		add(this.duelMode);
 
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 

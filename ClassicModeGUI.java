@@ -111,6 +111,18 @@ public class ClassicModeGUI extends JFrame implements MouseListener {
 
 	}
 
+	public void resetLives() {
+
+		this.livesLabel.setText("Lives : " + this.userLives);
+
+	}
+
+	public void resetScore() {
+
+		this.scoreLabel.setText("Score : " + this.userScore);
+
+	}
+
 	public void displayFrame(boolean var) {
 
 		if (var == true) {
@@ -155,6 +167,22 @@ public class ClassicModeGUI extends JFrame implements MouseListener {
 
 		this.questionLabel.setText(DataHandling.words.get(this.randomIndexForQANDA));
 
+	}
+
+	public int getUserLives() {
+		return userLives;
+	}
+
+	public void setUserLives(int userLives) {
+		this.userLives = userLives;
+	}
+
+	public int getUserScore() {
+		return userScore;
+	}
+
+	public void setUserScore(int userScore) {
+		this.userScore = userScore;
 	}
 
 	@Override

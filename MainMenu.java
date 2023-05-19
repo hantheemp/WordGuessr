@@ -17,7 +17,7 @@ public class MainMenu extends JFrame {
 
 	public static ClassicModeGUI gameGUI = new ClassicModeGUI();
 
-	private GameModeFrame gmf;
+	private GameModeFrame gmf = new GameModeFrame();
 
 	private JFrame infoFrame;
 
@@ -37,11 +37,17 @@ public class MainMenu extends JFrame {
 
 	public MainMenu() {
 
-		this.gmf = new GameModeFrame();
+		setSize(400, 300);
+
+		setResizable(false);
+
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+
+		setLocationRelativeTo(null);
+
+		setVisible(true);
 
 		this.infoFrame = new JFrame();
-
-		createDefaultWindow();
 
 		this.playButton = new JButton("Play");
 
@@ -74,7 +80,7 @@ public class MainMenu extends JFrame {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 
-				exit();
+				setVisible(false);
 
 				gmf.setVisible(true);
 
@@ -122,20 +128,6 @@ public class MainMenu extends JFrame {
 		setLayout(new BorderLayout());
 
 		add(buttonHolderPanel, BorderLayout.CENTER);
-
-		setVisible(true);
-
-	}
-
-	public void createDefaultWindow() {
-
-		setSize(400, 300);
-
-		setResizable(false);
-
-		setDefaultCloseOperation(EXIT_ON_CLOSE);
-
-		setLocationRelativeTo(null);
 
 		setVisible(true);
 
