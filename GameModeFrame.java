@@ -12,6 +12,8 @@ public class GameModeFrame extends JFrame implements MouseListener {
 
 	private JButton memorizeMode;
 
+	public static JButton buttonPressed;
+
 	public GameModeFrame() {
 
 		setLayout(new GridLayout(2, 1));

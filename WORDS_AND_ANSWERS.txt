@@ -6,4 +6,103 @@ Seigneur terraces-French
 Tingo-Pascunese
 Badruka-Swedish
 Chingada-Spanish
-Türk-Türkçe
+Farvel-Danish
+Undskyld-Danish
+Beklager-Danish
+Udgang-Danish
+Lukket-Danish
+Gauntlet-Swedish
+Ombudsman-Swedish
+Smorgasbord-Swedish
+Skal-Swedish
+Smör-Swedish
+Slögg-Swedish
+Derrière-French
+Belle-French
+Chien-French
+Garçon-French
+Au revoir-French
+Monsieur-French
+Amour-French
+Amigo-Spanish
+Hombre-Spanish
+Sol-Spanish
+Luna-Spanish
+Querer-Spanish
+Buenos días-Spanish
+Por favor-Spanish 
+Saludos-Spanish
+Visibilio-Italian
+Farfalla-Italian
+Nuvola-Italian 
+Allegria-Italian 
+Profeta-Italian
+Azzurro-Italian
+Casa-Italian
+Buchladen-German
+Woche-German
+Reisefieber-German
+Vorfreude-German
+Zeitgeist-German
+Staubsauger-German
+Trocken-German
+Dobry wieczór-Polish
+Przepraszam-Polish
+Kocham cie-Polish
+Lotnisko-Polish
+Jeden-Polish
+Pyszne-Polish
+Kaliméra-Greek
+Efharistó-Greek
+Yiá mas-Greek
+Com licença-Portuguese
+Cerveja-Portuguese
+Peixe-Portuguese
+Pão-Portuguese
+Avenida-Portuguese
+A Praia-Portuguese
+Almoço-Portuguese
+Hoog-Dutch
+Nodig hebben-Dutch
+Afbeelding-Dutch
+Gebruiken-Dutch
+Kijken-Dutch
+Wetenschap-Dutch
+Belangrijkste-Dutch
+Vermenigvuldigen-Dutch
+Nekateri-Slovenian
+Domov-Slovenian
+Potrebujete-Slovenian
+Slika-Slovenian
+Poskusite-Slovenian
+Graditi-Slovenian
+Dobře-Czech
+Následovat-Czech
+Odpověď-Czech
+Škola-Czech 
+Daleko-Czech
+Mladý-Czech
+Pelata-Finnish 
+Oikeinkirjoituksen-Finnish
+Lisätä-Finnish
+Paikka-Finnish
+Joki-Finnish
+Kysymys-Finnish
+Arazi-Turkish
+Hayvan-Turkish
+Yüngül-Azerbaijani
+Köhnə-Azerbaijani
+Xalq-Azerbaijani
+Gayıq-Azerbaijani
+Guerra-Spanish
+Razón-Spanish
+Bosque-Spanish
+Blanco-Spanish
+Jusqu’à-French
+Nourriture-French
+Proche-French
+Étoile-French
+Boîte-French
+Bedeuten-German
+Bauernhof-German
+Geschichte-German

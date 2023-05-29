@@ -192,7 +192,7 @@ public class ClassicModeGUI extends JFrame implements MouseListener {
 
 			if (this.userLives > 1) {
 
-				String userAnswer = this.userInputTextField.getText();
+				String userAnswer = this.userInputTextField.getText().toUpperCase();
 
 				if (userAnswer.equals(DataHandling.answers.get(this.randomIndexForQANDA))) {
 

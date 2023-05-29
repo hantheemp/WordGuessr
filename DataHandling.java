@@ -21,7 +21,7 @@ public class DataHandling {
 					String[] parts = line.split("-");
 					if (parts.length == 2) {
 						words.add(parts[0].trim());
-						answers.add(parts[1].trim());
+						answers.add(parts[1].trim().toUpperCase());
 					} else {
 						System.err.println("Invalid line format: " + line);
 					}
