@@ -29,12 +29,6 @@ public class MainMenu extends JFrame {
 
 	private JPanel buttonHolderPanel;
 
-	private ImageIcon playButtonIcon;
-
-	private ImageIcon howToPlayButtonIcon;
-
-	private ImageIcon exitButtonIcon;
-
 	public MainMenu() {
 
 		setSize(400, 300);
